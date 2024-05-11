@@ -10,6 +10,7 @@ plugins {
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
+sourceCompatibility = '17'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -41,7 +42,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs += "-Xjsr305=strict"
-        jvmTarget = "15"
+        jvmTarget = "17"
     }
 }
 
